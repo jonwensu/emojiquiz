@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Play } from "lucide-react";
+import { FaPlay } from "react-icons/fa";
 
 type GameStartButtonProps = {
   onClick: () => void;
@@ -25,7 +25,7 @@ export const GameStartButton = ({ onClick }: GameStartButtonProps) => {
         `}
       >
         <span className="relative z-10 flex items-center justify-center">
-          <Play className={`mr-2 ${isHovered ? "animate-bounce" : ""}`} />
+          <FaPlay className={`mr-2 ${isHovered ? "animate-bounce" : ""}`} />
           Start Game
         </span>
         <span
